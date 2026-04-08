@@ -25,11 +25,7 @@ pipeline {
             }
         }
 
-        stage('Push Docker Image') {
-            steps {
-                sh 'docker push Kota-Sindhu1/node-docker-app:${BUILD_NUMBER}'
-            }
-        }
+      
         
         stage('Create container') {
             steps {
